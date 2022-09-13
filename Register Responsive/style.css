@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+   --red-bg: #db2417;
+   --dark-bg: #6969b3;
+   --font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background: url(./IMG/Retro-Game-Wallpaper-79-images-.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-color: #6969b3;
+    padding-top: 5px;
+    height: 60px;
+}
+
+/* nav */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1rem 0 1rem;
+}
+
+.items a {
+    color: var(--red-bg);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: black;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+/* form */
+
+h1 {
+    color: var(--red-bg);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    background-color: var(--dark-bg);
+    align-items: center;
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    border-radius: 30px;
+    
+}
+
+form label {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 2px;
+}
+
+form input {
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 10 5px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.terminos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.terminos label {
+    font-size: 14px;
+}
+
+.btn {
+    background: rgb(0, 0, 0);
+    color: var(--red-bg);
+    width: 60%;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: var(--red-bg) ;
+    color: black;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.genero {
+    display: flex;
+    flex-direction: left;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+
+    form {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form input {
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .fecha{
+        width: 20%;
+    }
+
+    .genero {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        width: 25%;
+        height: 8%;
+    }
+    
+    .check {
+        width: 20%;
+        height: 20px;
+    }
+
+    .terminos {
+        text-align: center;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .terminos label {
+        font-size: 15px;
+    }
+
+
+    h1 {
+        font-size: 35px;
+    }
+}
+
+@media  screen and (min-width: 1280px) {
+    form {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    form input {
+        width: 60%;
+        height: 40px;
+    }
+
+    .fecha {
+        width: 20%;
+    }
+
+    .genero{
+        align-items: center;
+    }
+
+    .check {
+        width: 20%;
+        height: 25px;
+    }
+
+    .terminos {
+        width: 100%;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .btn {
+        width: 30%;
+        height: 10%;
+    }
+}
